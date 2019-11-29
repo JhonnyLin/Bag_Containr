@@ -51,6 +51,9 @@ nav a{
     border-radius: 100%;
     padding: 5%;
 }
+.login a:hover{
+    background-color: yellow;
+}
 
 footer{
     background-color: red;
@@ -58,6 +61,12 @@ footer{
     width: 100%;
 }
 
+.rodape .icon{
+    background-color: violet;
+    border-radius: 100%;
+    padding: 1%;
+    text-decoration: none;
+}
 main{
     background-color: blue;
     color: white;
