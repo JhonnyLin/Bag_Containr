@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <header>
+        <h1>Bem vindo</h1>
+        <h2> Bag Containr</h2>
+    </header>
+    <section class="secHome">
+        
+        <div class= "sobre">
+            <div class= "bike">
+                <img src="{% static 'imagens/guarda.jpg' %}" alt="login">
+            </div>
+            <div class= "bike">
+                <img src="{% static 'imagens/guarda1.jpg' %}" alt="login">
+            </div>
+        </div>
+        
+        <div class= "sobre">
+            <!-- api -->
+            <img class="exclusive" src="{% static 'imagens/tela.jpeg' %}" alt="login">
+        </div>
+        
+        <div class= "sobre">
+            <div class= "bike">
+                <img src="{% static 'imagens/bike.png' %}" alt="login">
+            </div>
+            <div class= "bike">
+                <img src="{% static 'imagens/bike1.png' %}" alt="login">
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}  

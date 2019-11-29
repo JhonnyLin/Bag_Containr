@@ -11,25 +11,30 @@
     <title>Bag Container</title>
 </head>
 <body>
-    <div id=logo>
-       
+    <div class= "top">
+        <div id = logo>
+            <img src="{% static 'imagens/loogo.png' %}" alt="logo">
+        </div>
+        <div class= "nave">
+            <nav>
+                <a href="/">Home</a>
+                <a href="#">Mapa do guarda volumes</a>
+                <a href="#">Funcionamento</a>
+                <a href="#">Planos</a>
+            </nav> 
+            <div class="login">
+                <div class="imgLogin">
+                    <img src="{% static 'imagens/login.png' %}" alt="login">
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">Mapa do guarda volumes</a>
-            <a href="#">Funcionamento</a>
-            <a href="#">Planos</a>
-            <a href="#">Login</a>
-        </nav>
-    </div>
-   
-
     {% block content %}
 
     {% endblock %}
-
-    <footer></footer>
+    <footer>
+        <h6>Tchau</h6>
+    </footer>
 
 </body>
 </html>
