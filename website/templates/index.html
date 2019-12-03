@@ -8,20 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script defer src="{% static 'script.js' %}"></script>
     <title>Bag Container</title>
 </head>
 <body>
-    <div class= "top">
+    <div class="container">
+        <div class= "top">
         <div id = logo>
             <img src="{% static 'imagens/loogo.png' %}" alt="logo">
         </div>
         <div class= "nave">
             <nav>
                 <a href="/">Home</a>
-                <a href="#">Mapa do guarda volumes</a>
+                <a href="#">Guarde seu item aqui</a>
                 <a href="#">Funcionamento</a>
                 <a href="#">Planos</a>
+                <a href="#">Fale conosco</a>
             </nav> 
             <div class="login">
                 <a href="#" class="imgLogin">
@@ -29,37 +32,38 @@
                 </a>
             </div>
         </div>
-    </div>
-    {% block content %}
+        </div>
+        {% block content %}
 
-    {% endblock %}
-    <footer>
-        <div class="rodape">
-            <a href="#" class="icon"> 
-                <img src="{% static 'imagens/smartphone.png' %}" alt="Aplicativo">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/facebook.png' %}" alt="Facebook">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/instagram.png' %}" alt="Instagram">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/linkedin.png' %}" alt="Linkedin">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/twitter.png' %}" alt="Twitter">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/youtube.png' %}" alt="Youtube">
-            </a>
-            <a href="#" class="icon">
-                <img src="{% static 'imagens/whatsapp.png' %}" alt="Whatsapp">
-            </a>
-        </div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
-             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-    </footer>
+        {% endblock %}
+        <footer>
+            <div class="rodape">
+                <a href="#" class="icon"> 
+                    <img src="{% static 'imagens/smartphone.png' %}" alt="Aplicativo">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/facebook.png' %}" alt="Facebook">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/instagram.png' %}" alt="Instagram">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/linkedin.png' %}" alt="Linkedin">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/twitter.png' %}" alt="Twitter">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/youtube.png' %}" alt="Youtube">
+                </a>
+                <a href="#" class="icon">
+                    <img src="{% static 'imagens/whatsapp.png' %}" alt="Whatsapp">
+                </a>
+            </div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
