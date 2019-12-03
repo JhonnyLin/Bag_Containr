@@ -57,6 +57,29 @@
 
         {% endblock %}
         <footer>
+            
+                <div style="text-align:center">
+                        <h2>Fale Conosco</h2>
+                      </div>
+                      <div class="row">
+                        <div class="column">
+                            <form action="/action_page.php">
+                                
+                                <label for="fname">Nome</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                                <label for="lname">Email</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Seu Email..">
+                                <label for="country">Estado</label>
+                                <select id="country" name="estado">
+                                <option value="australia">Brasil</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                </select>
+                                <label for="subject">Escreva aqui</label>
+                                <textarea id="subject" name="subject" placeholder="Escreva aqui.." style="height:170px"></textarea>
+                                <input type="submit" value="Enviar">
+                          </form>
+                        </div>
             <div class="rodape">
                 <a href="#" class="icon"> 
                     <img src="{% static 'imagens/smartphone.png' %}" alt="Aplicativo">
@@ -78,11 +101,11 @@
                 </a>
                 <a href="#" class="icon">
                     <img src="{% static 'imagens/whatsapp.png' %}" alt="Whatsapp">
-                </a>
-            </div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                </a> 
+
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
                 <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            </div>
+            </div> 
         </footer>
     </div>
 </body>
