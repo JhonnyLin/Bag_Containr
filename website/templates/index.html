@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,24 +14,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-	<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="img/favicon/favicon-54x54.png">
+	<link rel="icon" href="{% static 'img/favicon/favicon-32x32.png' %}" type= "{% static 'image/x-icon' %}" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'img/favicon/favicon-144x144.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'img/favicon/favicon-72x72.png' %}">
+	<link rel="apple-touch-icon-precomposed" href="{% static 'img/favicon/favicon-54x54.png' %}">
 	
 
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/cd-hero.css">
-	<link id="style-switch" href="css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'css/cd-hero.css' %}">
+	<link id="style-switch" href="{% static 'css/presets/preset3.css' %}" media="screen" rel="stylesheet" type="text/css">
 
 
 
@@ -71,7 +73,7 @@
 				    </button>
 				    <div class="navbar-brand navbar-bg">
 					    <a href="index.html">
-					    	<img class="img-responsive" src="images/logo.png" alt="logo">
+					    	<img class="img-responsive" src="{% static 'img/logo.png' %}" alt="logo">
 					    </a> 
 				    </div>                   
 				</div>
@@ -105,7 +107,7 @@
 			<ul class="cd-hero-slider">
 				<li class="selected">
 					<div class="overlay2">
-						<img class="" src="images/slider/bg1.jpg" alt="slider">
+						<img class="" src="{% static 'images/slider/bg1.jpg' %}" alt="slider">
 					</div>
 					<div class="cd-half-width">
 						<h2 class="titulo-principal">Deseja Guardar sua Bicicleta em segurança hoje ??</h2>
@@ -113,16 +115,16 @@
 					</div> 
 
 					<div class="cd-half-width cd-img-container">
-						<img src="images/slider/bg-thumb1.png" alt="">
+						<img src="{% static 'images/slider/bg-thumb1.png' %}" alt="">
 					</div>
 				</li>
 				<li>
 					<div class="overlay2">
-						<img class="" src="images/slider/bg2.jpg" alt="slider">
+						<img class="" src="{% static 'images/slider/bg2.jpg' %}" alt="slider">
 					</div>
 
 					<div class="cd-half-width cd-img-container">
-						<img src="images/slider/bg-thumb2.png" alt="">
+						<img src="{% static 'images/slider/bg-thumb2.png' %}" alt="">
 					</div> 
 
 					<div class="cd-half-width">
@@ -193,32 +195,32 @@
 
 					<div class="img-gallery">
 						<div class="img-container">
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/1.jpg">
-								<img src="images/gallery/1.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/1.jpg' %}">
+								<img src="{% static 'images/gallery/1.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/2.jpg">
-								<img src="images/gallery/2.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/2.jpg' %}">
+								<img src="{% static 'images/gallery/2.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/3.jpg">
-								<img src="images/gallery/3.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/3.jpg' %}">
+								<img src="{% static 'images/gallery/3.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/4.jpg">
-								<img src="images/gallery/4.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/4.jpg' %}">
+								<img src="{% static 'images/gallery/4.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/5.jpg">
-								<img src="images/gallery/5.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/5.jpg' %}">
+								<img src="{% static 'images/gallery/5.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/6.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/6.jpg' %}">
+								<img src="{% static 'images/gallery/6.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/7.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/6.jpg' %}">
+								<img src="{% static 'images/gallery/7.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/8.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/6.jpg' %}">
+								<img src="{% static 'images/gallery/8.jpg' %}" alt="">
 							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/9.jpg" alt="">
+							<a class="thumb-holder" data-rel="prettyPhoto" href="{% static 'images/gallery/6.jpg' %}">
+								<img src="{% static 'images/gallery/9.jpg' %}" alt="">
 							</a>
 						</div>
 					</div>
@@ -283,36 +285,36 @@
 	================================================== -->
 
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
 	<!-- Bootstrap jQuery -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 	<!-- Style Switcher -->
-	<script type="text/javascript" src="js/style-switcher.js"></script>
+	<script type="text/javascript" src="{% static 'js/style-switcher.js' %}"></script>
 	<!-- Owl Carousel -->
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
 	<!-- PrettyPhoto -->
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
 	<!-- Bxslider -->
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.flexslider.js' %}"></script>
 	<!-- CD Hero slider -->
-	<script type="text/javascript" src="js/cd-hero.js"></script>
+	<script type="text/javascript" src="{% static 'js/cd-hero.js' %}"></script>
 	<!-- Isotope -->
-	<script type="text/javascript" src="js/isotope.js"></script>
-	<script type="text/javascript" src="js/ini.isotope.js"></script>
+	<script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/ini.isotope.js' %}"></script>
 	<!-- Wow Animation -->
-	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
 	<!-- SmoothScroll -->
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
 	<!-- Eeasing -->
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
 	<!-- Counter -->
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.counterup.min.js' %}"></script>
 	<!-- Waypoints -->
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
 	<!-- Template custom -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 
-	<script type="text/javascript" src="js/efeitoescrita.js"></script>
+	<script type="text/javascript" src="{% static 'js/efeitoescrita.js' %}"></script>
 	</div><!-- Body inner end -->
 
 
