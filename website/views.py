@@ -22,3 +22,7 @@ def sobre(request):
 def preco(request):
 
     return render(request, 'pricing.html')
+
+def servico(request):
+
+    return render(request, 'service.html')
