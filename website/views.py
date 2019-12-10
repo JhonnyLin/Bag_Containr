@@ -14,3 +14,7 @@ def home(request):
 def contato(request):
 
     return render(request, 'contact.html')
+
+def sobre(request):
+
+    return render(request, 'about2.html')
