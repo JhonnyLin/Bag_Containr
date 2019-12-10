@@ -18,3 +18,7 @@ def contato(request):
 def sobre(request):
 
     return render(request, 'about2.html')
+
+def preco(request):
+
+    return render(request, 'pricing.html')
