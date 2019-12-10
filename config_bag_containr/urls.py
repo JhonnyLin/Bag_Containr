@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.home),
     path('contact.html/', views.contato),
     path('about2.html/', views.sobre),
+    path('pricing.html/', views.preco),
 ]
