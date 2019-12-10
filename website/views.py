@@ -26,3 +26,7 @@ def preco(request):
 def servico(request):
 
     return render(request, 'service.html')
+
+def time(request):
+
+    return render(request, 'team.html')
