@@ -67,7 +67,7 @@ def cadastro_Mensagem(request):
 
 class register(generic.CreateView):
     form_class = UserCreationForm
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('registrar')
     template_name = 'register.html'
 
 
