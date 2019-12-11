@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.views.decorators.http import require_POST
 from django.http import HttpResponseRedirect
+from website.forms import Mensagem
 
 # Create your views here.
 
@@ -48,7 +49,7 @@ def logout_user(request):
 
 
 def cadastro_Mensagem(request):
-    form = PedidoForm(request.POST or None)
+    form = Mensagem(request.POST or None)
     if form.is_valid():
         form.save()
         context = {
