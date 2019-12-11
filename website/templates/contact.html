@@ -83,7 +83,6 @@
 	    		<div class="col-md-7">
 	    			<form id="contact-form"  method="POST" role="form">
 						{% csrf_token %}
-						{{formulario}}
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
@@ -110,6 +109,7 @@
 							<label>Mensagem</label>
 							<textarea class="form-control" name="message" id="message" placeholder="400caracteres" rows="10" required></textarea>
 						</div>
+						{{formulario}}
 						<div class="text-right"><br>
 							<button class="btn btn-primary solid blank" type="submit">Enviar</button>
 						</div>
