@@ -1,113 +1,62 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Login</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<title>Login Page</title>
+   <!--Made with love by Mutiullah Samim -->
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <link rel="icon" href="{% static 'img/favicon/favicon-32x32.png' %}" type= "{% static 'image/x-icon' %}" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'img/favicon/favicon-144x144.png' %}">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'img/favicon/favicon-72x72.png' %}">
-	<link rel="apple-touch-icon-precomposed" href="{% static 'img/favicon/favicon-54x54.png' %}">
-	
-
-	
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
-	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
-	<link rel="stylesheet" href="{% static 'css/cd-hero.css' %}">
-    <link id="style-switch" href="{% static 'css/presets/preset3.css' %}" media="screen" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/style-switcher.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/jquery.flexslider.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/cd-hero.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/ini.isotope.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/jquery.counterup.min.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
-
-<script type="text/javascript" src="{% static 'js/efeitoescrita.js' %}"></script>
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
 </head>
 <body>
-
-        <div class="body-inner">
-	
-                <header id="header" class="navbar-fixed-top header" role="banner">
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <div class="navbar-brand navbar-bg">
-                                    <a href="../">
-                                        <img class="img-responsive" src="{% static 'img/logo.png' %}" alt="logo">
-                                    </a> 
-                                </div>                   
-                </header>
-
-    <div class ="container mt-4">
-        <form action="submit", method="POST"> {% csrf_token %}
-            <h2>LOGIN</h2>
-            <div class="form-group">
-                <label for="username">Usuário</label>
-                <input type="text", class="form-control" id="username" name="username" placeholder="Username">
-            </div>
-
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password", class="form-control" id="password" name="password" placeholder="Senha">
-            </div>
-    
-            <div>
-                {% for message in messages %}
-                    <div class="alert alert-danger">
-                        <strong>Error!</strong> {{ message }}
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form action="submit", method="POST"> {% csrf_token %}
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text", class="form-control" id="username" name="username" placeholder="Username">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password", class="form-control" id="password" name="password" placeholder="Senha">
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
                     </div>
-                {% endfor %}
-                <button type="submit" class="btn btn-success">Entrar</button>
-            </div>
+                    
+                    <div>
+                            {% for message in messages %}
+                                <div class="alert alert-danger">
+                                    <strong>Error!</strong> {{ message }}
+                                </div>
+                            {% endfor %}
+                    </div>
 
-        </form>
-    </div>
-
-
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
