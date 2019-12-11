@@ -36,18 +36,12 @@
 					<span><i class="fab fa-twitter-square"></i></span>
 				</div>
 			</div>
-			{% for message in messages %}
-					<div class="alert alert-primary">
-						<strong>Error!</strong> {{ message }}
-					</div>
-				{% endfor %}
 			<div class="card-body">
-				<form form action="." method="post"> {% csrf_token %}
+				<form form action="." method="POST"> {% csrf_token %}
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="hidden" name="csrfmiddlewaretoken" value="K6EORuT4vhb9UP7eQ6RNnidyJ8LXABJ4CFeHoryqDumX6xyBvKNS9Ij46iLLtDWr">
 						<input for="id_username" type="text", class="form-control" id="id_username" name="username" placeholder="Usuário">
 					</div>
 					<div class="input-group form-group">
