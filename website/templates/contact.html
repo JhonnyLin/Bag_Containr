@@ -110,7 +110,11 @@
 							<textarea class="form-control" name="message" id="message" placeholder="400caracteres" rows="10" required></textarea>
 						</div>
 						<div class="text-right"><br>
-							<button class="btn btn-primary solid blank" type="submit">Enviar</button> 
+							<form method="POST">
+								{% csrf_token %}
+								{{formulario}}
+								<button class="btn btn-primary solid blank" type="submit">Enviar</button>
+							</form>
 						</div>
 					</form>
 	    		</div>

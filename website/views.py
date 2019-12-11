@@ -30,3 +30,17 @@ def servico(request):
 def time(request):
 
     return render(request, 'team.html')
+
+def cadastro_Mensagem(request):
+    form = PedidoForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        context = {
+            'msg': "Pedido realizado com sucesso"
+        }
+        return render(request, 'contact.html', context)
+    context = {
+        'formulario':form
+    }
+
+    return render(request, 'contact.html', context)
