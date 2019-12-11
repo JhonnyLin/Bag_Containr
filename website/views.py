@@ -6,6 +6,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.views.decorators.http import require_POST
 from django.http import HttpResponseRedirect
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
+
 
 # Create your views here.
 
@@ -60,6 +64,11 @@ def cadastro_Mensagem(request):
     }
 
     return render(request, 'contact.html', context)
+
+class register(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'register.html'
 
 
 @csrf_protect
