@@ -26,7 +26,7 @@ SECRET_KEY = 'g+2%0vkf_3qxh66ls6d*!ssk11(i*ku8t*7h5y#rl*baji@q*w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'bagcontainr.herokuapp.com']
 
 
 # Application definition
