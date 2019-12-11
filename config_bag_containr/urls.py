@@ -20,9 +20,12 @@ from website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('contact.html/', views.contato),
-    path('about2.html/', views.sobre),
-    path('pricing.html/', views.preco),
-    path('service.html/', views.servico),
-    path('team.html/', views.time),
+    path('contato/', views.contato),
+    path('sobre/', views.sobre),
+    path('preco/', views.preco),
+    path('servico/', views.servico),
+    path('time/', views.time),
+    path('login/', views.login_user),
+    path('login/submit', views.submit_login),
+    path('logout/', views.logout_user),
 ]
