@@ -70,7 +70,11 @@
                     <img class="" src="{% static 'img/slider/bg1.jpg' %}" alt="slider">
                 </div>
                 <div class="cd-half-width">
-                    <h2 class="titulo-principal">Deseja Guardar sua Bike com segurança??</h2>
+                    {% if user.is_authenticated %}
+                    <h2 class="titulo-principal"> {{user.username}} Deseja Guardar sua Bike com segurança??</h2>
+                    {% else %}
+                    <h2 class="titulo-principal"> Deseja Guardar sua Bike com segurança??</h2>
+                    {% endif %}
                     <a href="../preco" class="cd-btn btn btn-primary solid">Clique aqui</a>
                 </div> 
 
