@@ -28,8 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'bagcontainr.herokuapp.com']
 
-heroku config:set DEBUG_COLLECTSTATIC=1
-
 
 # Application definition
 
