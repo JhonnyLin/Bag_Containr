@@ -52,7 +52,7 @@ def logout_user(request):
 
 
 def cadastro_Mensagem(request):
-    form = PedidoForm(request.POST or None)
+    form = Mensagem(request.POST or None)
     if form.is_valid():
         form.save()
         context = {

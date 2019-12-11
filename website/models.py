@@ -9,10 +9,9 @@ class Cadastro(models.Model):
     dataN = models.DateField()
     mae = models.CharField(max_length=140)
     opcoes_plano = [
-        ('diario', 'Diarias'),
-        ('semanal', 'semanal'),
-        ('Mensal', 'Mensal'),
-        ('Anual', 'Anual'),
+        ('Mensal', 'Basic'),
+        ('trimestral', 'Padrao'),
+        ('Anual', 'Premium'),
     ]
     login = models.CharField(max_length=15, default= "1111")
     senha = models.CharField(max_length=15, default= "1111")
@@ -25,7 +24,7 @@ class Contato(models.Model):
     nome = models.CharField(max_length=140)
     email = models.EmailField()
     assunto = models.CharField(max_length=30)
-    messagem = models.CharField(max_length=500)
+    messagem = models.CharField(max_length=400)
 
     def __str__(self):
         return self.nome
