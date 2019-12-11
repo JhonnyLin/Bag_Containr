@@ -1,1 +1,1 @@
-web: gunicorn confg_bag_containr.wsgi
+web: gunicorn config_bag_containr.wsgi
