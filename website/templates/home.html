@@ -20,8 +20,6 @@
 
 
 <div class="body-inner">
-
-
 <header id="header" class="navbar-fixed-top header" role="banner">
     <div class="container">
         <div class="row">
@@ -51,7 +49,11 @@
 
                     <li><a href="../preco">Preços</a></li>
 
+                    {% if user.is_authenticated %}
+                    <li><a href="../logout">Logout</a></li>
+                    {% else %}
                     <li><a href="../login">Login</a></li>
+                    {% endif %}
 
                 </ul>
             </nav>

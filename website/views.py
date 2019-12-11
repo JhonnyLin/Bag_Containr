@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+from django.views.decorators.http import require_POST
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -57,6 +61,22 @@ def cadastro_Mensagem(request):
 
     return render(request, 'contact.html', context)
 
+@require_POST
+def cadastrar_user(request):
+    try:
+        usuario_aux = User.objects.get(email=request.POST['campo-email'])
+
+        if usuario_aux:
+            return render(request, '/', {'msg': 'Erro! Já existe um usuário com o mesmo e-mail'})
+
+    except User.DoesNotExist:
+        username = request.POST['campo-nome-usuario']
+        email = request.POST['campo-email']
+        senha = request.POST['campo-senha']
+
+        novoUsuario = User.objects.create_user(username=username, email=email, password=password)
+        novoUsuario.save()
+
 
 @csrf_protect
 def submit_login(request):
@@ -70,3 +90,4 @@ def submit_login(request):
         else:
             messages.error(request, 'Usuário e senha inválidos. Favor tentar novamente!')
     return redirect('/login/')
+
