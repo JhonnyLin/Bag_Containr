@@ -385,26 +385,6 @@ blockquote {
 	margin-bottom: 30px;
 }
 
-.parallax1{
-	background: url(../images/parallax/parallax1.jpg) no-repeat;
-}
-
-.parallax2{
-	background: url(../images/parallax/parallax2.jpg) no-repeat;
-}
-
-.parallax3{
-	background: url(../images/parallax/parallax3.jpg) no-repeat;
-}
-
-.parallax4{
-	background: url(../images/parallax/parallax4.jpg) no-repeat;
-}
-
-.parallax .btn.solid {
-	margin-left: 10px;
-}
-
 
 /* Deafult title */
 
