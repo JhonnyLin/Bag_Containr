@@ -9,7 +9,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
-
+from django.views.generic.edit import FormView
 
 # Create your views here.
 
@@ -75,8 +75,6 @@ class register(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('registrar')
     template_name = 'register.html'
-
-    
 
 @csrf_protect
 def submit_login(request):
