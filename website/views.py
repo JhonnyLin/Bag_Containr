@@ -17,26 +17,32 @@ def index(request):
    
     return render(request, 'index.html')
 
+@login_required(login_url='/login/')
 def home(request):
 
     return render(request, 'home.html')
 
+@login_required(login_url='/login/')
 def contato(request):
 
     return render(request, 'contact.html')
 
+@login_required(login_url='/login/')
 def sobre(request):
 
     return render(request, 'about2.html')
 
+@login_required(login_url='/login/')
 def preco(request):
 
     return render(request, 'pricing.html')
 
+@login_required(login_url='/login/')
 def servico(request):
 
     return render(request, 'service.html')
 
+@login_required(login_url='/login/')
 def time(request):
 
     return render(request, 'team.html')
@@ -69,6 +75,7 @@ class register(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('registrar')
     template_name = 'register.html'
+
     
 
 @csrf_protect
